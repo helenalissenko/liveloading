@@ -1,0 +1,4 @@
+<%= link_to 'Load More', users_path(page: (params[:page].to_i || 1)+1, per_page: params[:per_page] || 8), class: 'hook', remote: true %>
+<div class="users">
+	<%= render partial: 'user' %>
+</div>
